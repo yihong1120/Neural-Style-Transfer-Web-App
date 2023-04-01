@@ -1,0 +1,5 @@
+tensorflow
+numpy
+matplotlib
+pillow
+google_images_search

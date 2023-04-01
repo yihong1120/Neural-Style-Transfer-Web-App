@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3E6Uwa3qf3GV6v&odQ==">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .file-name-box {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">Image Search</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lookup">Lookup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reset">Reset</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Search Form -->
+        <h2 class="mb-3">Search Images</h2>
+        <form method="POST" action="/" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="query" class="form-label">Search Query:</label>
+                <input type="text" name="query" id="query" class="form-control" required>
+                    </div>
+                        <div class="mb-3">
+                            <label for="search_engine" class="form-label">Search Engine:</label>
+                                <select name="search_engine" id="search_engine" class="form-select">
+                                    <option value="google">Google</option>
+                                    <option value="bing">Bing</option>
+                                    <option value="yahoo">Yahoo</option>
+                                </select>
+                        </div>
+                    <div class="mb-3">
+                <label for="unique_id" class="form-label">Unique ID:</label>
+                <input type="text" name="unique_id" id="unique_id" class="form-control">
+            </div>
+            <!-- File Upload -->
+            <div class="mb-3">
+                    <label for="file-input" class="form-label">Upload File:</label>
+                    <input type="file" name="file"id="file-input" class="form-control" onchange="updateFileName()">
+                <div class="mt-2 file-name-box" id="file-name-box">No file selected</div>
+            </div>
+            <!-- Buttons -->
+            <div class="mb-3">
+                <input type="submit" value="Search" class="btn btn-primary">
+                <input type="button" value="Reset" onclick="location.href='/reset'" class="btn btn-secondary">
+                <input type="button" value="Lookup" onclick="location.href='/lookup'" class="btn btn-info">
+                </div>
+                    </form>
+                        {% if unique_id %}
+                            <p>Your unique ID: {{ unique_id }}</p>
+                            {% endif %}
+                            <br>
+                        {% if images %}
+        <!-- Results -->
+        <h2>Results: {{ query }}</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                {% for image in images %}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{{ url_for('static', filename=unique_id + '/' + query + '/' + image) }}" alt="Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">{{ image }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    <!-- JavaScript -->
+    <script>
+        function updateFileName() {
+            const fileInput = document.getElementById('file-input');
+            const fileNameBox = document.getElementById('file-name-box');
+            if (fileInput.files.length > 0) {
+                fileNameBox.textContent = fileInput.files[0].name;
+            } else {
+                fileNameBox.textContent = 'No file selected';
+            }
+        }
+    </script>
+                
+</body>
+</html>
