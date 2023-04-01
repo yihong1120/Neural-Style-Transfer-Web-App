@@ -5,7 +5,7 @@ The app is built using Flask and Tensorflow, and utilizes the VGG19 convolutiona
 
 ## Features
 
-- Search images using Google, Bing, or Yahoo
+- Search images using Google. Bing and Yahoo will be available
 - Upload a file for personalized search
 - Assign a unique ID to keep track of search history
 - Lookup previous search results using the unique ID
