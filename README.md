@@ -13,7 +13,7 @@ The app is built using Flask and Tensorflow, and utilizes the VGG19 convolutiona
 
 ## Displays of User Interface
 
-![Image search and style select section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/search_setting.png "HAHA")
+![Image search and style select section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/search_setting.png)
 
 ![Display pictures grabbed from the Internet and the style template image](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/grabbed_images.png)
 
