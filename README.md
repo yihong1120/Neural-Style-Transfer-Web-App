@@ -5,7 +5,7 @@ The app is built using Flask and Tensorflow, and utilizes the VGG19 convolutiona
 
 ## Features
 
-- Search images using Google. Bing and Yahoo will be available
+- Search images using Google, Bing, or Yahoo
 - Upload a file for personalized search
 - Assign a unique ID to keep track of search history
 - Lookup previous search results using the unique ID
@@ -58,9 +58,9 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 
 ### Image Lookup
 ![Display lookup section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/lookup.png)
-1. Click "Lookup".
+1. Click "Lookup" in index page.
 2. Enter a unique ID.
-3. Click "Submit".
+3. Click "Lookup".
 4. View the queries associated with the unique ID.
 5. Click on a query to view the results.
 
