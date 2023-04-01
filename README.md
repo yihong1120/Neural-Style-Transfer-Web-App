@@ -49,7 +49,6 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 1. Enter a search query for the style image or upload your own.
 2. (Optional) Adjust the number of images to retrieve from Google Images.
 3. (Optional) Select a search engine to use.
-4. Click "Submit".
 5. (Optional) Upload your own content image or use the default.
 6. Click "Search".
 7. View the results.
