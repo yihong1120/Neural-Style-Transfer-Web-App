@@ -65,4 +65,4 @@ To customise the app, modify the parameters in app.py and style_transfer.py.
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/LICENSE) file for details.
