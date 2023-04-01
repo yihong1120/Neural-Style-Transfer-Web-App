@@ -13,13 +13,10 @@ The app is built using Flask and Tensorflow, and utilizes the VGG19 convolutiona
 
 ## Displays of User Interface
 
-![Image search and style select section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/search_setting.png)
 
 ![Display pictures grabbed from the Internet and the style template image](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/grabbed_images.png)
 
 ![Display the transfer images](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/transferred_images.png)
-
-![Display lookup section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/lookup.png)
 
 ## Technologies Used
 
@@ -58,6 +55,7 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 5. (Optional) Upload your own content image or use the default.
 6. Click "Transform".
 7. View the results.
+![Image search and style select section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/search_setting.png)
 
 ### Image Lookup
 1. Click "Lookup".
@@ -65,6 +63,7 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 3. Click "Submit".
 4. View the queries associated with the unique ID.
 5. Click on a query to view the results.
+![Display lookup section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/lookup.png)
 
 ### Reset
 1. Click "Reset".
