@@ -51,8 +51,8 @@ class ImageDownloader:
 
 
 if __name__ == "__main__":
-    api_key = 'AIzaSyD1aoB_kiPTfMpRESqpigmUaSjq1Puz9Gk'
-    cx_id = '62842d2c8c40d4f4c'
+    api_key = 'AIzaSyD1aoB_kiPTfMpRESqpigmUaSjq1Puz9Gksf3'
+    cx_id = '62842d2c8c40d4f4ca1e'
     query = 'puppies'
     num_images = 5
 
