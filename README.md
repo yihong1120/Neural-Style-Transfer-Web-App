@@ -48,6 +48,7 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 ## Usage
 
 ### Style Transfer
+![Image search and style select section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/search_setting.png)
 1. Enter a search query for the style image or upload your own.
 2. (Optional) Adjust the number of images to retrieve from Google Images.
 3. (Optional) Select a search engine to use.
@@ -55,15 +56,14 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 5. (Optional) Upload your own content image or use the default.
 6. Click "Transform".
 7. View the results.
-![Image search and style select section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/search_setting.png)
 
 ### Image Lookup
+![Display lookup section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/lookup.png)
 1. Click "Lookup".
 2. Enter a unique ID.
 3. Click "Submit".
 4. View the queries associated with the unique ID.
 5. Click on a query to view the results.
-![Display lookup section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/lookup.png)
 
 ### Reset
 1. Click "Reset".
