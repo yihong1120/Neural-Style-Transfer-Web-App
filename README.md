@@ -47,6 +47,10 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 
 ## Usage
 
+### Reset
+1. Click "Reset".
+2. Confirm the reset.
+
 ### Style Transfer
 ![Image search and style select section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/search_setting.png)
 1. Enter a search query for the style image or upload your own.
@@ -64,10 +68,6 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 3. Click "Submit".
 4. View the queries associated with the unique ID.
 5. Click on a query to view the results.
-
-### Reset
-1. Click "Reset".
-2. Confirm the reset.
 
 ## Customization
 To customise the app, modify the parameters in app.py and style_transfer.py.
