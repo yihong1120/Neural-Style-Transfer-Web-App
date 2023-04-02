@@ -7,11 +7,10 @@ import os
 
 
 class StyleTransfer:
-    def __init__(self, content_path, style_path, max_dim=512, content_weight=1e4, style_weight=1e-2, 
+    def __init__(self, content_path, style_path, content_weight=1e4, style_weight=1e-2, 
                  content_layers=['block5_conv2'], style_layers=['block1_conv1', 'block2_conv1', 'block3_conv1', 'block4_conv1', 'block5_conv1']):
         self.content_path = content_path
         self.style_path = style_path
-        self.max_dim = max_dim
         self.content_weight = content_weight
         self.style_weight = style_weight
         self.content_layers = content_layers
@@ -19,10 +18,6 @@ class StyleTransfer:
 
     def load_image(self, image_path):
         image = Image.open(image_path).convert('RGB')  # 將圖像轉換為 RGB 格式
-        if self.max_dim:
-            factor = self.max_dim / max(image.size)
-            size = tuple((round(dim * factor) for dim in image.size))
-            image = image.resize(size, Image.ANTIALIAS)
         img_array = np.array(image)
         img_array = tf.expand_dims(img_array, 0)
         return img_array
@@ -111,8 +106,8 @@ if __name__ == "__main__":
     # style_transfer = StyleTransfer(None, style_path)  # 先將 content_path 設為 None
     # style_transfer.process_folder('static/puppies', 'static/puppies/style_index.jpg')
 
-    content_path = '17898463157018.jpg'
-    style_path = 'Picasso.jpg'
+    content_path = 'IMG_6031.jpg.jpg'
+    style_path = 'maxresdefault.jpg'
     max_dim = 512 #可使用預設參數
     content_weight = 1e-5# 1e4 #可使用預設參數
     style_weight = 1e3# 1e-2 #可使用預設參數
@@ -126,6 +121,6 @@ if __name__ == "__main__":
     iterations = 1000 #可使用預設參數
     output_path = 'output_image.jpg'
 
-    style_transfer = StyleTransfer(content_path, style_path, max_dim, content_weight, style_weight, content_layers, style_layers)
+    style_transfer = StyleTransfer(content_path, style_path, content_weight, style_weight, content_layers, style_layers)
     output_image = style_transfer.style_transfer(iterations=iterations)
     style_transfer.save_image(output_image, output_path)
