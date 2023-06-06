@@ -1,4 +1,4 @@
-# Neural-Style-Transfer-Web-App
+# Neural Style Transfer Web App
 This web app allows users to apply artistic styles to their own images or a set of images retrieved from Google Images using neural style transfer.
 
 The app is built using Flask and Tensorflow, and utilizes the VGG19 convolutional neural network to extract feature representations of both the content and style images. The content and style losses are then computed and combined to create a new image that captures the content of the original image while applying the style of the style image.
