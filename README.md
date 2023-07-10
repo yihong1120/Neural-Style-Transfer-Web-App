@@ -22,19 +22,27 @@ The app is built using Flask and Tensorflow, and utilizes the VGG19 convolutiona
 ## Getting Started
 To use this app, clone the repository to your local machine:
 
-    git clone https://github.com/yihong1120/neural-style-transfer.git
+```bash
+git clone https://github.com/yihong1120/neural-style-transfer.git
+```
 
 Navigate to the neural-style-transfer directory
 
-    cd neural-style-transfer
+```bash
+cd neural-style-transfer
+```
 
 Install the required packages:
 
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 To start the app, run:
 
-    python app.py
+```bash
+python app.py
+```
 
 Then, open your web browser and go to http://localhost:5000 to access the app.
 
