@@ -49,7 +49,7 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 ## Usage
 
 ### Reset
-1. Click **Reset**.
+1. Click `Reset`.
 2. Confirm the reset.
 
 ### Style Transfer
@@ -58,7 +58,7 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 2. (Optional) Adjust the number of images to retrieve from Google Images.
 3. (Optional) Select a search engine to use.
 5. (Optional) Upload your own content image or use the default.
-6. Click **Search**.
+6. Click `Search`.
 7. View the results.
 
 ![Display pictures grabbed from the Internet and the style template image](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/grabbed_images.png)
@@ -66,9 +66,9 @@ Then, open your web browser and go to http://localhost:5000 to access the app.
 
 ### Image Lookup
 ![Display lookup section](https://github.com/yihong1120/Neural-Style-Transfer-Web-App/blob/main/images/lookup.png)
-1. Click **Lookup** in index page.
+1. Click `Lookup` in index page.
 2. Enter a unique ID.
-3. Click **Lookup**.
+3. Click `Lookup`.
 4. View the queries associated with the unique ID.
 5. Click on a query to view the results.
 
