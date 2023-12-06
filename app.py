@@ -201,4 +201,4 @@ if __name__ == '__main__':
     scheduler.enter(86400, 1, schedule_cleanup, (scheduler,))
     scheduler.run(blocking=False)
 
-    app.run(debug=True)
+    app.run()
